@@ -80,7 +80,7 @@ function Sidebar() {
 
             <div className="sidebar_section3">
                 <div className="section3_image">
-                    <img src={lamp}></img>
+                    <img src={lamp} className="image_lighton"></img>
                 </div>
                 <div className="section3_header">
                     Thoughts Time

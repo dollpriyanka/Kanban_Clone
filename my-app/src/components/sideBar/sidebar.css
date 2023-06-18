@@ -178,12 +178,17 @@
 }
 
 .sidebar_section3 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-radius: 16px;
     background: #F5F5F5;
     position: relative;
     width: 80%;
-    margin-left: 20px;
+    gap: 10px;
+    align-self: center;
+    padding: 10px;
 }
 
 
@@ -201,13 +206,21 @@
 }
 
 .section3_image {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
     position: absolute;
-    width: 33px;
-    height: 33px;
-
-    background: rgba(252, 214, 74, 0.7);
-    /* filter: blur(17px); */
-    border-radius: 25%;
+    top: -15px;
+    left: 40%;
+    right: 0;
+    /* width: 100%; */
+    background-color: #f5f5f5;
+}
+.image_lighton {
+    height: 20px;
+    width:20px;
 }
 
 .section3_body {
@@ -232,5 +245,7 @@
 .button {
     background: #FFFFFF;
     border-radius: 4px;
+    padding: 15px;
+    border: none;
     /* position: absolute; */
 }
