@@ -22,14 +22,23 @@ import done from '../assest/done.svg';
 const initialLists = [
     {
         title: "To Do",
+        style: {
+            background: "#5030E5"
+        },
         status: "todo",
     },
     {
         title: "On Progress",
+        style: {
+            background: "#FFA500"
+        },
         status: "doing",
     },
     {
         title: "Done",
+        style: {
+            background: "#76A5EA"
+        },
         status: "done",
     },
 ];
@@ -89,7 +98,7 @@ const initialData = {
             id: "qwe2",
             tag: "Low",
             title: "Onboarding Illustrations",
-            image: {ellipse_onprogress1},
+            image: [ellipse_onprogress1],
             status: "doing",
             avatar: [
                 ellipse9,
@@ -105,7 +114,7 @@ const initialData = {
             id: "qwe6",
             tag: "Low",
             title: "Moodboard",
-            image: {ellipse_onprogress2, ellipse_onprogress3},
+            image: [ellipse_onprogress2, ellipse_onprogress3],
             status: "doing",
             avatar: [
                 ellipse9
@@ -119,7 +128,7 @@ const initialData = {
             id: "qwe7",
             tag: "High",
             title: "Onboarding Illustration",
-            image: {ellipse_onprogress2},
+            image: [ellipse_onprogress2],
             status: "doing",
             avatar: [
                 ellipse9,
@@ -137,7 +146,7 @@ const initialData = {
             id: "qwe4",
             tag: "completed",
             title: "Mobile App Design",
-            image: {done},
+            image: [done],
             status: "done",
             avatar: [
                 ellipse4,
@@ -251,16 +260,17 @@ function BoardList() {
                             key={l.status}
                             title={l.title}
                             status={l.status}
+                            style={l.style}
                             onChange={cardChangeHandler}
                         />
                     ))}
-                    <div className="board-col">
+                    {/* <div className="board-col">
                         <div className="list">
                             <a className="btn-list" href="#">
                                 + Add another list
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </main>

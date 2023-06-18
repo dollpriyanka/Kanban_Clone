@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import './boardList.css';
+import dot from '../assest/dot.svg';
+import message_box from '../assest/message_box.svg';
+import files_img from '../assest/files_img.svg';
+
 
 const tempColors = { "Bug Fix": 1, "UI Dev": 2, Testing: 3 };
 
-export default function TrelloCard({ id, status, title, label }) {
+export default function Card({ id, tag, title, text, status, image, avatar, comments, files }) {
   const [onHold, setOnHold] = useState(false);
 
   const dragStartHandler = (e) => {
@@ -58,23 +62,41 @@ export default function TrelloCard({ id, status, title, label }) {
       onDragLeave={onDragLeaveHandler}
       onDrop={onDropHandler}
     >
-      <div className="cardTitle">{title}</div>
-      <div className="cardFooter">
-        {label ? (
-          <div className={`label color${tempColors[label]}`}>{label}</div>
-        ) : (
-          <div></div>
-        )}
-
-        <div className="collab">
-          <a href="" className="collabPerson">
-            <i className="fas fa-user"></i>
-          </a>
-          <a href="" className="collabPerson">
-            <i className="fas fa-user"></i>
-          </a>
+      <div className="tag_container">
+        <div className={`cardTag ${tag.toLowerCase()}`}>
+          {tag}
+        </div>
+        <div>
+          <img src={dot}></img>
         </div>
       </div>
+      <div className="cardTitle">{title}</div>
+      {!!text && (
+        <div className="cardText">
+          {text}
+        </div>
+      )}
+      <div className="image-container">
+        {image && image.length > 0 && image.map((i) => <img src={i} className="cardImage" />)}
+      </div>
+      <div className="footer">
+        <div className="avatar-container">
+           {avatar && avatar.length > 0 && avatar.map((i) => <img src={i} className="avatarImage" />)}
+        </div>
+        <div>
+          <img src={message_box}></img>
+          <span>{comments} comments</span>
+        </div>
+        <div>
+          <img src={files_img}></img>
+          <span>{files} files</span>
+        </div>
+      </div>
+
+
+
+
+
     </div>
   );
 }

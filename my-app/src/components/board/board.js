@@ -1,8 +1,9 @@
 import React from "react";
 import './boardList.css';
 import Card from "./card";
+import addicon from '../assest/addicon.svg';
 
-export default function Board({ data, title, status, onChange }) {
+export default function Board({ data, title, status, style, onChange }) {
   // Sort data (Might need useMemo)
   let sorted = data.sort((a, b) => a.order - b.order);
 
@@ -42,17 +43,27 @@ export default function Board({ data, title, status, onChange }) {
       <Card
         key={`status-${item.id}`}
         id={item.id}
-        status={status}
+        tag={item.tag}
         title={item.title}
+        text={item.text}
+        image={item.image}
+        status={item.status}
+        avatar={item.avatar}
+        comments={item.comments}
+        files={item.files}
         label={item.label}
       />
     ));
   };
-
+  console.log(style);
   return (
     <div className="board-col">
       <div className="list">
-        <h4 className="list-title">{title}</h4>
+        <div className="list-header-container">
+          <div className="list-title"><div className="board-col-dot" style={style}></div><div>{title}</div></div>
+          {status === "todo" && (<div><img src={addicon} /></div>)}
+        </div>
+        <div className="header-border-bottom" style={style}></div>
         <div
           className="boardContentArea"
           onDragEnter={onDragEnterHandler}
@@ -62,7 +73,7 @@ export default function Board({ data, title, status, onChange }) {
         >
           {renderCards()}
         </div>
-        <a className="btn-list">+ Add another card</a>
+        {/* <a className="btn-list">+ Add another card</a> */}
       </div>
     </div>
   );

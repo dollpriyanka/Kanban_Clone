@@ -22,7 +22,11 @@
     color: #0D062D;
 
 }
-
+.section1-bottom-border {
+    background: #787486;
+    height: 5px;
+    width: 100%;
+}
 .sidebar_header {
     display: flex;
     flex-direction: row;
@@ -48,6 +52,7 @@
     align-items: flex-start;
     /* padding: 12px; */
     /* margin: 5px; */
+    border-bottom: 1px solid #DBDBDB;
 
 }
 
@@ -108,6 +113,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .section2_header {

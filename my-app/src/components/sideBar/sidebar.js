@@ -92,6 +92,7 @@ function Sidebar() {
                     <button className="button">Write a message</button>
                 </div>
             </div>
+            
 
         </div>
 
