@@ -2,7 +2,6 @@ import react from 'react';
 import Sidebar from './components/sideBar/sidebar.js';
 import "./App.css";
 import Header from './components/header/header.js';
-import Task from './components/task/task.js';
 
 
 function App() {
@@ -12,7 +11,6 @@ function App() {
         <Sidebar />
         <Header />
       </div>
-      <Task />
     </div>
   );
 }
