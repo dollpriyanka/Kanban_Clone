@@ -7,7 +7,7 @@ import header_icon3 from '../assest/header_icon3.svg';
 import dropdown from '../assest/dropdown.svg';
 import header_avatar from '../assest/header_avatar.svg';
 import Task from '../task/task.js';
-
+import BoardList from '../board/boardList.js';
 
 
 
@@ -32,6 +32,7 @@ function Header() {
                 </div>
             </div>
             <Task />
+            <BoardList />
         </div>
 
     )
