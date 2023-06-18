@@ -9,13 +9,14 @@ import ellipse5 from '../assest/ellipse5.svg';
 import ellipse6 from '../assest/ellipse6.svg';
 import ellipse7 from '../assest/ellipse7.svg';
 import ellipse8 from '../assest/ellipse8.svg';
-import ellipse_onprogress1 from '../assest/ellipse_onprogress1.svg';
-import ellipse_onprogress2 from '../assest/ellipse_onprogress2.svg';
-import ellipse_onprogress3 from '../assest/ellipse_onprogress3.svg';
 import ellipse9 from '../assest/ellipse9.svg';
 import ellipse10 from '../assest/ellipse10.svg';
 import ellipse11 from '../assest/ellipse11.svg';
-import ellipse12 from '../assest/ellipse12.svg';
+import ellipse_onprogress1 from '../assest/ellipse_onprogress1.svg';
+import ellipse_onprogress2 from '../assest/ellipse_onprogress2.svg';
+import ellipse_onprogress3 from '../assest/ellipse_onprogress3.svg';
+import done from '../assest/done.svg';
+
 
 
 const initialLists = [
@@ -107,7 +108,7 @@ const initialData = {
             image: {ellipse_onprogress2, ellipse_onprogress3},
             status: "doing",
             avatar: [
-                ellipse12
+                ellipse9
             ],
             comments:9,
             files: 10,
@@ -134,8 +135,32 @@ const initialData = {
     done: [
         {
             id: "qwe4",
-            title: "Card 4",
+            tag: "completed",
+            title: "Mobile App Design",
+            image: {done},
             status: "done",
+            avatar: [
+                ellipse4,
+               ellipse5
+            ],
+            comments:12,
+            files: 15,
+            order: 1,
+            label: "Bug Fix",
+        },
+        {
+            id: "qwe8",
+            tag: "completed",
+            title: "Design system",
+            status: "done",
+            text: "It just needs to adapt the UI from what you did before ",
+            avatar: [
+                ellipse9,
+                ellipse10,
+                ellipse11
+            ],
+            comments:12,
+            files: 15,
             order: 1,
             label: "Bug Fix",
         },
