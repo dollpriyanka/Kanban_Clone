@@ -7,7 +7,7 @@
     height: 100vh;
     width: 15vw;
     /* padding: 12px; */
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 .header_title {
@@ -17,6 +17,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+    /* height: 7vh; */
 
     color: #0D062D;
 
