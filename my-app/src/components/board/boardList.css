@@ -5,7 +5,7 @@
    --app-col: #f5f6f8;
  }
  body {
-   font-family: Lato, sans-serif;
+   font-family: "Inter";
    font-size: 16px;
  }
  .trello_page {
@@ -47,8 +47,7 @@
    margin-bottom: 1.5rem;
    font-size: 1.2rem;
  }
- .app-content-area {
- }
+  
  .app-header {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
