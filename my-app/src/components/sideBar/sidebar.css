@@ -178,10 +178,15 @@
 }
 
 .sidebar_section3 {
+    display: block;
     border-radius: 16px;
-    background-color: #f5f5f5;
+    background: #F5F5F5;
     position: relative;
+    width: 80%;
+    margin-left: 20px;
 }
+
+
 
 .section3_header {
     display: flex;
@@ -192,18 +197,17 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .section3_image {
-    position: fixed;
-    transform: translate(50%, -50%);
-    top: 50%;
-    left: 50%;
+    position: absolute;
     width: 33px;
     height: 33px;
+
     background: rgba(252, 214, 74, 0.7);
-    filter: blur(17px);
+    /* filter: blur(17px); */
+    border-radius: 25%;
 }
 
 .section3_body {
@@ -214,16 +218,19 @@
     font-size: 12px;
     line-height: 15px;
     text-align: center;
+    /* padding: 5px; */
+    /* padding-bottom: 2px; */
 }
 
 .section3_button {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 5px; */
 }
 
 .button {
     background: #FFFFFF;
     border-radius: 4px;
-    position: absolute;
+    /* position: absolute; */
 }
