@@ -25,7 +25,7 @@ function Header() {
                     <img src={header_icon2} className="header_icons"></img>
                     <img src={header_icon3} className="header_icons"></img>
                     <div className="avatar">
-                        <div className="name">Anima<br /> Agarwal</div>
+                        <div className="name">Anima Agarwal <br /> <div className="grey">U.P, India</div></div>
                         <img src={header_avatar}></img>
                         <img src={dropdown}></img>
                     </div>

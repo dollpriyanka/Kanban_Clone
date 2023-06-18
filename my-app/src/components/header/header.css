@@ -51,9 +51,14 @@
 .name {
     gap: 15px;
 }
+.grey {
+    color: darkgray;
+    text-align: left;
+    width: 100%;
+}
 .avatar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     height: 24px;
     width: auto;
     flex-direction: row;
